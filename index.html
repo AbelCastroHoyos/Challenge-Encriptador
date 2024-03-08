@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/Logo.svg" alt="logo">
+    </header>
+     <main>
+        <div class="cifrar">
+            <div class="contenedor-texto">
+                <textarea class="txtEdition" id="mensaje" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <div class="advertencia">
+                <img src="img/Advertencia.svg" alt="">
+                <p>&nbsp;&nbsp;No se admiten mayúsculas ni caracteres especiales</p>
+            </div>
+            <div class="botones-accion">
+                <input type="button" value="Cifrar" id = "btn-cifrar"   onclick="cifrar();">
+                <input type="button" value="Descifrar" id = "btn-descifrar" onclick="descifrar();">
+            </div>
+        </div>
+        <div class="descifrar">
+            <div class="contenedor-resultado">
+                <p id="ver-mensaje"></p>
+            </div>
+            <div class="muneco">
+                <img src="img/Muneco.svg" alt="Muñeco">
+            </div>
+            <div class="ver-msg">
+                <h3>Ningún mensaje fue <br> encontrado</h3>
+                <p>Ingresa el texto que deseas cifrar o <br>descifrar</p>
+                <!--<textarea class="txtEdition" id="ver-mensaje" cols="30" rows="10"></textarea><br>--> 
+            </div>
+            <div class="copiar">
+                <input type="button" value="Copiar" id="copy">
+            </div> 
+        </div>
+    </main>
+    <footer>
+        <p>&#169 Abel Castro - 2024</p>
+    </footer>
+    <script src="js.js"></script>
+</body>
+</html>
